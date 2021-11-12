@@ -1,0 +1,32 @@
+.scroll-top{
+    background-color: #EA8339;
+    color: #fff;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    transition: 0.8s;
+}
+.scroll-top i{
+    z-index: 1;
+    animation: scrollTop 0.5s alternate ease infinite;
+}
+
+.scroll-top:hover{
+    background-color: #111;
+    color: #fff;
+    cursor: pointer;
+}
+@keyframes scrollTop{
+    from{
+        transform: translateY(2px);
+    }
+    to{
+        transform: translateY(-1px);
+    }
+}

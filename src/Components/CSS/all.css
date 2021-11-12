@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+.dishImage{
+    max-width:100%;
+    border-radius:50%;
+    border: 5px solid grey;
+    
+}
+
+.dishName{
+    color:#fff;
+    font-size: 1.2rem;
+    font-family: 'Nunito', sans-serif;
+}
+.dots{
+    color:#fff;
+    letter-spacing: 5px;
+}
+.price{
+    color:#EA8339;
+}
+.dishDescription{
+    color: #878684;
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
+    text-align: justify;
+}

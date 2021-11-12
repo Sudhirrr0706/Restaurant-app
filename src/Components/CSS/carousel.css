@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+.slidesPic{
+    max-width: 100%;
+}
+.eventName{
+    color: #EA8339;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+}
+.eventPrice{
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
+    
+}
+.eventIcon{
+    color: #EA8339;
+}
+.evenType{
+    color: #EA8339;
+    font-weight: 500;
+    font-family: 'Nunito', sans-serif;
+}
+.eventDescription{
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    line-height:1.8rem;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+}
+@media only screen and (max-width: 768px){
+    .eventDescription{
+        font-size: 16px;
+        line-height:1.5rem;
+    }
+}

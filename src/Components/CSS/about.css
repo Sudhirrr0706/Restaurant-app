@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+.about-section{
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+}
+
+.aboutHead{
+    font-size:2rem;
+    font-weight: 600;
+}
+.aboutDescription{
+    font-weight: 400;
+    font-size: 1rem;
+    font-style: italic;
+    text-align: justify;
+}
+.checkListDescription{
+    text-align: justify;
+    line-height: 1.8rem;
+}
+.imgAbout{
+    max-width:100%;
+    transition: all 0.8s ease-in-out;
+    border: 2px solid #2A363D;
+}
+.imgAbout:hover {
+    transform:scale(1.08);
+}
+
+.customChecklist{
+    color: #EA8339;
+}
+.aboutFoot{
+    text-align: justify;
+}
+@media only screen and (max-width:769px){
+  .aboutHead{
+      font-size:1.2rem;
+  }
+  .aboutDescription{
+      font-size: 0.9rem;
+  }
+  .imgAbout:hover{
+    transform:scale(1.04);
+  }
+}
+

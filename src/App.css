@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+.App {
+  text-align: center;
+}
+section{
+  background-color: #0C0B09 ;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+/* Header Section */
+header{
+  background-image:linear-gradient( rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.514) ), url(./images/hero-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+
+
+/* About Section */
+
+.about{
+  background-image: linear-gradient( rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.781) ),url(./images/about-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width:100%;
+  
+}
+.about-cards{
+  color: #fff;
+  background-color: #0c0b09b0;
+}
+
+.mainMenu{
+  font-family: 'Nunito', sans-serif;
+}
+
+.menu{
+  background-color: #1A1814;
+}
+.menuTitle{
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.activeTitle{
+  color: #EA8339;
+}
+.menuTitle:hover{
+  color: #EA8339;
+  cursor: pointer;
+}
+
+.menuDescription{
+    color: #EA8339;
+    font-size: 2rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.SpecialMenu{
+  background-color: #0C0B09;
+}
+.categories{
+ border-right: 5px solid #EA8339;
+}
+.customNav{
+  background-color: #EA8339;
+}
+.items{
+  transition: all 0.5s ease-in-out;
+  color: #fff;
+}
+.items:hover{
+  color: #EA8339;
+  cursor: pointer;
+}
+
+.specialSection{
+  background-color: #0C0B09;
+  overflow-x: hidden;
+}
+.specialMenu{
+  border-right: 3px solid #EA8339;
+}
+.specialItemsNav{
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.specialItemsNav:hover{
+  color: #EA8339;
+  cursor: pointer;
+}
+.customSpecialMenu{
+  background-color: #EA8339;
+  color: #111;
+  transition: all 0.5s ease-in-out;
+}
+.customSpecialMenu{
+  cursor:pointer;
+}
+.specialMenu{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+/* Event Section */
+
+.eventSection{
+  background-image: linear-gradient( rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.74) ),url(./images/events-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width:100%;
+}
+
+/* Booking Section */
+
+.bookingSection{
+  background-color: #0C0B09;
+}
+.TableBookImage{
+  max-width:100%;
+}
+
+/* Gallery Section */
+
+.gallerySection,.chefSection{
+  background-color: #1A1814;
+}
+.imageContainer img{
+  max-width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.534);
+  transition: 0.8s all ease-in-out;
+  opacity: 0.5;
+}
+.imageContainer:hover img{
+	transform: scale(1.1);
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* Footer Section */
+.footerSection{
+  background-color: #1A1814;
+}
+.footerSection h2{
+  color: #EA8339;
+  font-family: 'Nunito', sans-serif;
+} 
+
+.footerSection p{
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+}
+.footerIcons{
+  color: #fff;
+  text-align: center;
+  transition: 0.8s all ease-in-out;
+}
+.footerIcons:hover {
+  color: #EA8339;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.footerLinks{
+  text-align:justify
+}
+.footerLinks h5{
+  color: #EA8339;
+  font-family: 'Nunito', sans-serif;
+}
+.footerLinks i{
+  color: #fff;
+  transition: 0.5s all ease-in-out;
+}
+.footerLinks i:hover {
+  color: #EA8339;
+  cursor: pointer;
+}
+.copyrightsSection{
+  background-color: #0C0B09;
+  text-align: center;
+}
+.copyrightsSection span{
+  color: #EA8339;
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

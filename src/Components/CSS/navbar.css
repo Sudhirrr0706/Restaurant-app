@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+.hotelLogo{
+    color: #EA8339;
+}
+.mobileContact{
+    color: #fff;
+    font-size: 0.8rem;
+  }
+.mobileContact i{
+    color: #EA8339;
+  }
+.custom-nav{
+    background-color: rgba(17, 17, 17, 0.829);
+    font-family: 'Red Hat Display', sans-serif;
+    transition: all 0.4s ease-in-out;
+}
+.positionNav{
+    position: fixed;
+    width: 100%;
+    transition: all 0.2s linear;
+}
+.custom-brand-name{
+    color: #EA8339;
+    transition:0.4s;
+    font-size: 1.4rem;
+}
+.nav-link{
+    text-decoration: none;
+    color: #fff;
+    transition:all 0.4s linear; 
+    font-size: 1rem;
+}
+.nav-link:hover{
+    color: #EA8339;
+}
+.navBar-button{
+    border-radius: 20px;
+    border-color: #EA8339;
+    color: #fff;
+    transition:all 0.4s ease-in-out;
+}
+.navBar-button:hover{
+    color: #fff;
+    border-color: #EA8339;
+    background-color: #EA8339;
+}
+.customToggler{
+    transform: rotateX(180deg);
+}
+
+.scroll-effect{
+    position:fixed;
+    top: 0;
+    z-index: 1;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease-in;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 15px 0 15px 0;
+    background-color: rgba(17, 17, 17, 0.918);
+}
+@media only screen and (max-width: 768px){
+    .custom-brand-name{
+        font-size:16px;
+    }
+    .customNumber{
+        font-size:11px;
+    }
+    .custom-nav{
+        background-color: #111;
+        z-index:1;
+    }
+    .navBar-button{
+        float: center;
+    }
+
+}

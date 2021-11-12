@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+.chefsImages{
+    max-width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.chefSocialMediaSection:hover .chefsImages{
+    opacity: 0.4;
+    cursor: pointer;
+}
+.chefsSection{
+    transition: 0.5s all ease-in-out;
+}
+.chef1{
+    background-image:url(../ChefImages/chefs-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    transition: 0.8s ease-in-out;
+}
+.chefsSection:hover .chef1{
+    transition: 0.5s ease-out;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.781) ), url(../ChefImages/chefs-1.jpg);
+    cursor: pointer;
+}
+
+
+.chef2{
+    background-image: url(../ChefImages/chefs-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    transition: 1s ease-in-out;
+}
+.chefsSection:hover .chef2 {
+    background-image:linear-gradient( rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.781) ), url(../ChefImages/chefs-2.jpg);
+    cursor: pointer;
+}
+
+.chef3{
+    background-image:url(../ChefImages/chefs-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    transition: 1s ease-in-out;
+}
+.chefsSection:hover .chef3{
+    background-image:linear-gradient( rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.781) ), url(../ChefImages/chefs-3.jpg);
+    cursor: pointer;
+}
+.chefName, .chefPosition{
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.chefName, .chefPosition, .customChefIcons{
+    text-align: center;
+    color: #111;
+    transition: 1s all ease-in-out;
+    opacity: 0;
+}
+.chefsSection:hover .chefName{
+    color: #Ea8339;
+    opacity: 1;
+}
+.chefsSection:hover .chefPosition{
+    color: #Ea8339;
+    opacity: 1;
+}
+.chefsSection:hover .customChefIcons{
+    color: #fff;
+}
+.chefsSection:hover .customChefIcons{
+    opacity: 1;
+}
+.chefsSection:hover .customChefIcons:hover {
+    color: #Ea8339;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.customChefIcons{
+    transition: 0.5s all ease-in-out;
+    opacity: 0;
+}

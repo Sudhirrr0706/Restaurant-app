@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&display=swap');
+.head-section-content{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    left: 10%;
+}
+.inner-content{
+    color: #fff;
+}
+.inner-content h1 , .inner-content span{
+    font-family: 'IBM Plex Serif', serif;
+    font-size:3.5rem;
+}
+.inner-content p{
+    font-size:1.2rem;
+    font-family: 'IBM Plex Serif', serif;
+}
+.play-button{
+    text-align: center;
+    transition:all 0.4s ease-in-out;
+    animation: animate 0.8s ease-in-out infinite alternate;
+}
+.logo-play{
+    border-radius:50%;
+    background-color: #fff;
+    color: #111;
+    transition: 0.3s ease-in-out;
+}
+.intro-btn{
+    border-radius:20px;
+    border: 2px solid #EA8339;
+    color: #fff;
+    font-family: 'IBM Plex Serif', serif;
+    transition:all 0.8s ease-in-out;
+}
+.intro-btn:hover{
+    color: #fff;
+    background-color: #fff;
+    color: #EA8339;
+    border-color: #fff;
+}
+
+.logo-play:hover {
+    transform: rotate(120deg);
+    transform-origin: center;
+    background-color: #111;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+@keyframes animate{
+
+    to{
+        transform: scale(0.9);
+    }
+}
+
+
+
+/* Tablet View */
+@media only screen and (max-width: 768px){
+    .head-section-content{
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        left: 10%;
+    }
+    .inner-content h1 , .inner-content span{
+        font-size:2.5rem;
+        text-align: center;
+    }
+    .inner-content p{
+        text-align: center;
+    }
+}
+/* Mobile View */
+@media only screen and (max-width: 426px){
+    .head-section-content{
+        position: absolute;
+        top: 30%;
+        right: 10%;
+        left: 10%;
+    }
+}

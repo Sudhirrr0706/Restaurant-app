@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+.comboName{
+    color: #EA8339;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+.comboDesc{
+    color: #888787;
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
+}
+.comboPic{
+    max-width:100%;
+    border-radius:15px;
+}
+.comboIcon{
+    color: #EA8339;
+}
+.dishDetails{
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+}

@@ -1,0 +1,28 @@
+.Count{
+    color:rgb(255, 255, 255);
+    font-weight: 700;
+    font-size:3rem;
+}
+.heading{
+    font-size:1.8rem;
+    color: #fff;
+}
+.content{
+    font-size:1rem;
+    text-align: justify;
+}
+.cardsContent{
+    color: rgb(121, 117, 117);
+    transition: all 0.8s linear; 
+}
+.cardsContent:hover{
+    color: rgb(255, 255, 255);
+    background-color: #ea8339e7;
+    transform: scale(1.02);
+}
+@media only screen and (max-width: 768px){
+    .heading{
+        font-size: 1.2rem;
+    }
+
+}
