@@ -74,7 +74,7 @@ class NonVeg extends Component {
                        {
                            allMenu.map(item=>{
                                return(
-                                <AnimationOnScroll animateIn="animate__fadeInUp" isVisible={this.props.animeVisible} className="col-lg-6 col-12 d-flex flex-wrap justify-content-between p-3" key={item.id}>
+                                <AnimationOnScroll animateIn="animate__fadeIn"  isVisible={this.props.animeVisible} className="col-lg-6 col-12 d-flex flex-wrap justify-content-between p-3" key={item.id}>
                                     <div className="dishBorder col-lg-2 col-3 p-2">
                                         <img className="dishImage" src={item.image} alt=""/>
                                     </div>

@@ -232,14 +232,14 @@ class App extends Component {
 
           {/* Menu */}
           <div id="menuSection"  className="menu py-5">
-            <div className="container mx-auto">
+            <AnimationOnScroll animateIn="animate__fadeIn" className="container mx-auto">
               <div className="d-flex">
                 <p className="text-white pe-2 my-auto">MENU</p>
                 <hr className="text-white col-lg-4 col-8 my-auto"></hr>
               </div>
               
               <h3 className="menuDescription">Check Our Tasty Menu</h3>
-            </div>
+            </AnimationOnScroll>
 
             <div className="MealSection d-flex container">
 
@@ -260,13 +260,13 @@ class App extends Component {
 
         {/*  Special Menu */}
           <div id="SpecialMenuSection" className="specialSection py-5">
-            <div className="container mx-auto">
+            <AnimationOnScroll animateIn="animate__fadeIn"  className="container mx-auto">
                 <div className="d-flex">
                   <p className="text-white pe-2 my-auto">SPECIALS</p>
                   <hr className="text-white col-lg-4 col-8 my-auto"></hr>
                 </div>
                 <h3 className="menuDescription">Check Our Specials</h3>
-            </div>
+            </AnimationOnScroll>
 
             <div className="container py-lg-5 d-flex flex-wrap">
 
@@ -287,7 +287,7 @@ class App extends Component {
           {/* Events */}
           <div id="eventSection" className="eventSection py-5">
 
-            <AnimationOnScroll animateIn="animate__fadeInUp"className="container mx-auto">
+            <AnimationOnScroll animateIn="animate__fadeIn"  className="container mx-auto">
                 <div className="d-flex">
                   <p className="text-white pe-2 my-auto">EVENTS</p>
                   <hr className="text-white col-lg-4 col-8 my-auto"></hr>
@@ -295,15 +295,15 @@ class App extends Component {
                 <h3 className="menuDescription">Organize Your Events in our Restaurant</h3>
             </AnimationOnScroll>
 
-            <AnimationOnScroll animateIn="animate__fadeInUp" duration={1}>
+            <div>
              <Carousel />
-            </AnimationOnScroll>
+            </div>
 
           </div>
 
           {/* Booking Table */}
           <div id="ReservationSection" className="bookingSection py-5">
-            <AnimationOnScroll animateIn="animate__fadeInUp" className="container mx-auto">
+            <AnimationOnScroll animateIn="animate__fadeIn"  className="container mx-auto">
                 <div className="d-flex">
                   <p className="text-white pe-2 my-auto">RESERVATION</p>
                   <hr className="text-white col-lg-4 col-8 my-auto"></hr>
@@ -311,9 +311,9 @@ class App extends Component {
                 <h3 className="menuDescription">Book a Table</h3>
             </AnimationOnScroll>
 
-            <AnimationOnScroll animateIn="animate__zoomIn"className="container" animationInDuration={1.5}>
+            <div className="container" animationInDuration={1.5}>
               <BookTable />
-            </AnimationOnScroll>
+            </div>
 
           </div>
 
@@ -321,7 +321,7 @@ class App extends Component {
 
           <div id="gallerySection" className="gallerySection py-5">
 
-            <AnimationOnScroll animateIn="animate__fadeInUp" className="container mx-auto">
+            <AnimationOnScroll animateIn="animate__fadeIn" className="container mx-auto">
                 <div className="d-flex">
                   <p className="text-white pe-2 my-auto">GALLERY</p>
                   <hr className="text-white col-lg-4 col-8 my-auto"></hr>
@@ -329,7 +329,7 @@ class App extends Component {
                 <h3 className="menuDescription">Some Photos from our Restaurant</h3>
             </AnimationOnScroll>
 
-            <AnimationOnScroll  animateIn="animate__zoomIn" animationInDuration={2} className="imageSection d-flex flex-wrap p-2">
+            <AnimationOnScroll  animateIn="animate__zoomIn" animationInDuration={2} animateOnce={true}  className="imageSection d-flex flex-wrap p-2">
               {
                 images.map(item=>{
                   return(
@@ -347,7 +347,7 @@ class App extends Component {
           {/* Chef Details Section */}
 
           <div id="chefSection" className="chefSection">
-            <AnimationOnScroll animateIn="animate__fadeInUp" className="container mx-auto">
+            <AnimationOnScroll animateIn="animate__fadeIn" className="container mx-auto">
                 <div className="d-flex">
                   <p className="text-white pe-2 my-auto">CHEFS</p>
                   <hr className="text-white col-lg-4 col-8 my-auto"></hr>
@@ -368,7 +368,7 @@ class App extends Component {
         {/* Footer Section */}
         <footer id="contactSection" className="footerSection pt-5">
         <hr className="text-white col-12 my-auto"></hr>
-        <AnimationOnScroll animateIn="animate__fadeInUp" className="container py-5 d-flex flex-wrap justify-content-center mx-auto p-2">
+        <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} className="container py-5 d-flex flex-wrap justify-content-center mx-auto p-2">
           <div className="col-lg-3 col-10 ms-auto">
             <div className="footerDetails">
               <h2>RESTAURANTLY</h2>

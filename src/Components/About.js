@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import './CSS/about.css'
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 class About extends Component {
  
     render() {
         return (
-            <div className="container aboutSection p-lg-3 p-2">
+            <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true} duration={2} className="container aboutSection p-lg-3 p-2">
                 <div className=" d-flex flex-wrap-reverse justify-content-between align-items-center about-section ">
 
                     <div className="col-lg-6 col-12 ">
@@ -39,7 +40,7 @@ class About extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </AnimationOnScroll>
         )
     }
 }

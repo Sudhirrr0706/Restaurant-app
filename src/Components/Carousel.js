@@ -25,7 +25,7 @@ class Carousel extends Component {
                 id:3,
                 icon:"fas fa-glass-cheers fa-2x eventIcon p-2",
                 type:"Event description",
-                typeDesc:"Innocent is one stop destination for Private Party Planning. Planning can be a difficult task but Innocent provides you with innovative ideas to make your celebrations more happening. We make sure that your day will be remembered for lifetime by you and your guests. For your Birthday parties we have special theme based arrangements. you can choose from different themes like Cartoon, Circus, Fairy tales etc. Theme parties are equally enjoyed by adults as well as children. We also have different themes for all other occasions as well. Our teams of professionals make Private party Management easy and they are considered as best among the other event organizers."
+                typeDesc:"Planning can be a difficult task but Innocent provides you with innovative ideas to make your celebrations more happening. We make sure that your day will be remembered for lifetime by you and your guests. you can choose from different themes like Cartoon, Circus, Fairy tales etc. Theme parties are equally enjoyed by adults as well as children. We also have different themes for all other occasions as well. Our teams of professionals make Private party Management easy and they are considered as best among the other event organizers."
             }
         ]
 

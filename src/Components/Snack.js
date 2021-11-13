@@ -32,7 +32,7 @@ class Snack extends Component {
         ]
         return (
             <React.Fragment>
-                <AnimationOnScroll animateIn="animate__fadeInRight" className="d-flex flex-wrap-reverse justify-content-center my-lg-0 my-3">
+                <AnimationOnScroll animateIn="animate__fadeIn" duration={2} className="d-flex flex-wrap-reverse justify-content-center my-lg-0 my-3">
                     <div className="MealDetails col-lg-8 col-12">
                         <h2 className="comboName">Smoked eel and beetroot jelly bruschetta</h2>
                         <p className="comboDesc">Bruschetta is a family favourite. Make it interesting with this smoked eel and beetroot jelly version.</p>

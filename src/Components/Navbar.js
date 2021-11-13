@@ -1,6 +1,5 @@
-import React, { useEffect,useState } from 'react'
+import React from 'react'
 import "./CSS/navbar.css" 
-// import { useWindowScroll } from 'react-use';
 
 
 class Navbar extends React.Component {

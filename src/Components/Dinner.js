@@ -34,7 +34,7 @@ class Dinner extends Component {
         ]
         return (
             <React.Fragment>
-                <AnimationOnScroll animateIn="animate__fadeInRight" className="d-flex flex-wrap-reverse justify-content-center my-lg-0 my-3">
+                <AnimationOnScroll animateIn="animate__fadeIn" duration={2} className="d-flex flex-wrap-reverse justify-content-center my-lg-0 my-3">
                     <div className="MealDetails col-lg-8 col-12">
                         <h2 className="comboName">Quick uttapam</h2>
                         <p className="comboDesc">These fluffy  pancakes from South India are made with rice and topped with tomato, chilli and herbs.</p>

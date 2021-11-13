@@ -44,7 +44,7 @@ class SpecialComboMeal extends Component {
         ]
         return (
             <React.Fragment>
-                <AnimationOnScroll animateIn="animate__fadeInRight" className="d-flex flex-wrap-reverse justify-content-center my-lg-0 my-3">
+                <AnimationOnScroll animateIn="animate__fadeIn" duration={2} className="d-flex flex-wrap-reverse justify-content-center my-lg-0 my-3">
                     <div className="MealDetails col-lg-8 col-12">
                         <h2 className="comboName">Plant-based Combo Meal</h2>
                         <p className="comboDesc">100% Whole Food Plant Based Meals Ready to Heat & Eat.Designed by Doctors for Optimal Health.</p>

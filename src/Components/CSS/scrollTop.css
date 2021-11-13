@@ -11,8 +11,9 @@
     right: 10px;
     bottom: 10px;
     transition: 0.8s;
+    z-index: 1;
 }
-.scroll-top i{
+.icon{
     z-index: 1;
     animation: scrollTop 0.5s alternate ease infinite;
 }

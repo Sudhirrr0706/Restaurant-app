@@ -27,7 +27,7 @@ class BrunchMeal extends Component {
         ]
         return (
             <React.Fragment>
-                <AnimationOnScroll animateIn="animate__fadeInRight" className="d-flex flex-wrap-reverse justify-content-center my-lg-0 my-3">
+                <AnimationOnScroll animateIn="animate__fadeIn" duration={2} className="d-flex flex-wrap-reverse justify-content-center my-lg-0 my-3">
                     <div className="MealDetails col-lg-8 col-12">
                         <h2 className="comboName">Three Cheese Creamy Grits</h2>
                         <p className="comboDesc">Three Cheese Creamy Grits, a savory southern recipe that is always a huge hit for a brunch idea!</p>

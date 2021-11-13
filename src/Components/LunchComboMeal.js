@@ -37,7 +37,7 @@ class LunchComboMeal extends Component {
         ]
         return (
             <React.Fragment>
-                <AnimationOnScroll animateIn="animate__fadeInRight" className="d-flex flex-wrap-reverse justify-content-center my-lg-0 my-3">
+                <AnimationOnScroll animateIn="animate__fadeIn" duration={2} className="d-flex flex-wrap-reverse justify-content-center my-lg-0 my-3">
                     <div className="MealDetails col-lg-8 col-12">
                         <h2 className="comboName">Variety Rice | South Indian</h2>
                         <p className="comboDesc">South Indian variety rice lunch is the menu number 11 for the series. It has sambar rice, lemon rice, curd rice, a vegetable and vermicelli pudding along with some fryums.</p>

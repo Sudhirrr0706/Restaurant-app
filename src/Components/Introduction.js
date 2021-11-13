@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import "./CSS/introduction.css"
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 class Introduction extends Component {
     render() {
         return (
-            <div className="d-flex flex-wrap justify-content-lg-between justify-content-center align-items-center head-section-content">
+            <AnimationOnScroll animateIn="animate__fadeIn" duration={2} className="d-flex flex-wrap justify-content-lg-between justify-content-center align-items-center head-section-content">
 
                 <div className="inner-content col-lg-10 col-12">
                     <h1>Welcome to <span style={{color:"#EA8339"}}>Restaurantly</span></h1>
@@ -18,7 +19,7 @@ class Introduction extends Component {
                     <i className="fas fa-play-circle fa-4x play-button playButtonRotate"/>
                 </div>
                 
-            </div>
+            </AnimationOnScroll>
         )
     }
 }

@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import Cards from './Cards'
 import "./CSS/aboutCards.css"
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 class AboutCards extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="container py-5">
+                <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}  className="container py-5">
 
                     <div className="cards ">
                         <div className="d-flex">
@@ -27,7 +28,7 @@ class AboutCards extends Component {
                         </div>
                     </div>
                         
-                </div>
+                </AnimationOnScroll>
             </React.Fragment>
         )
     }
