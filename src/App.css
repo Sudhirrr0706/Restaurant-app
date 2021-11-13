@@ -164,7 +164,7 @@ header{
 .footerIcons{
   color: #fff;
   text-align: center;
-  transition: 0.8s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 .footerIcons:hover {
   color: #EA8339;
