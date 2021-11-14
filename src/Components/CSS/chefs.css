@@ -76,9 +76,9 @@
 .chefsSection:hover .customChefIcons:hover {
     color: #Ea8339;
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.3);
 }
 .customChefIcons{
-    transition: 0.5s all ease-in-out;
+    transition: 0.3s all ease-in-out;
     opacity: 0;
 }
