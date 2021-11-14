@@ -55,7 +55,7 @@ class Carousel extends Component {
                     
                     <div className="carousel-inner">
                         {/* slide 1 Birthday party*/}
-                        <div className="carousel-item active py-5" data-bs-interval="3000">
+                        <div className="carousel-item active py-5" data-bs-interval="5000">
                             <div className="container d-flex flex-wrap justify-content-between align-items-center">
                                 <div className="col-lg-6 col-12 p-2"> 
                                     <img src="../event-birthday.jpg" className="slidesPic" alt="..."/>
@@ -88,7 +88,7 @@ class Carousel extends Component {
 
                         {/* slide 2 Private Party*/}
                         
-                        <div className="carousel-item py-5 " data-bs-interval="3000">
+                        <div className="carousel-item py-5 " data-bs-interval="5000">
                             <div className="container d-flex flex-wrap justify-content-between align-items-center">
                                 <div className="col-lg-6 col-12 p-2"> 
                                     <img src="../event-private.jpg" className="slidesPic" alt="..."/>
@@ -121,7 +121,7 @@ class Carousel extends Component {
 
                         {/* slide 3 Custom Party*/}
 
-                        <div className="carousel-item py-5" data-bs-interval="3000">
+                        <div className="carousel-item py-5" data-bs-interval="5000">
                             <div className="container d-flex flex-wrap justify-content-between align-items-center">
                                 <div className="col-lg-6 col-12 p-2"> 
                                     <img src="../event-custom.jpg" className="slidesPic" alt="..."/>
