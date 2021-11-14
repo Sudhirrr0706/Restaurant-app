@@ -173,7 +173,7 @@ class BookTable extends Component {
         if(!this.state.confirmation){
             modalRender = 
             <div className="modalBody">
-                <p className="text-secondary">Hello, <strong>{this.state.nameInput}</strong> confirm your details.</p>
+                <p className="text-secondary">Hello, <strong>{this.state.nameInput}</strong> verify your booking.</p>
                             <p className="d-flex ">Mail-id : <p className="text-primary"> {this.state.mailInput}</p></p>
                             <p className="d-flex">Contact : <p className="text-primary"> {this.state.contactInput}</p></p>
                             <div className="d-flex flex-wrap justify-content-between">
