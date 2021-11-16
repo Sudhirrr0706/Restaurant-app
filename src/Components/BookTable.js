@@ -270,7 +270,7 @@ class BookTable extends Component {
                             </Animated>
                         </div>
                         <div className="col-md-6 col-12">
-                            <label for="inputPerson" className="form-label labelName">Person</label>
+                            <label for="inputPerson" className="form-label labelName">Seats</label>
                             <input type="number" className="form-control text-white" id="inputPerson" value={this.state.personInput} onChange={this.onChangePersonHandler} name="seat_count" />
                             <Animated animationIn="shake" isVisible={this.state.peopleAnime}>
                                 <span className="Error text-danger">{this.state.peopleError}</span>
