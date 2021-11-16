@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import "./CSS/bookTable.css"
 import {Animated} from "react-animated-css";
 import Modal from 'react-bootstrap/Modal';
+import emailjs from 'emailjs-com';
 import LandingPage from './LandingPage';
 class BookTable extends Component {
     state={
@@ -154,6 +155,12 @@ class BookTable extends Component {
         }
 
         event.preventDefault()
+        emailjs.sendForm('service_2nj0um4','template_n08b30c', event.target, 'user_Y8RNF66Inl74cooqzopr5')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
     }
 
     onModalHide=()=>{
@@ -163,11 +170,22 @@ class BookTable extends Component {
         
     }
 
-    onClickConfirmation=()=>{
+    onClickConfirmation=(e)=>{
 
         this.setState({confirmation:true})
+        
+        
 
     }
+
+  
+
+    // Send Email to confirm
+  
+   
+
+
+
     render() {
       let modalRender
         if(!this.state.confirmation){
@@ -201,10 +219,10 @@ class BookTable extends Component {
                    
 
                    <div className="col-lg-7 col-12 forms">
-                    <form className="row g-3 px-lg-4 px-3 py-4 mt-auto" onSubmit="return false">
+                    <form className="row g-3 px-lg-4 px-3 py-4 mt-auto" onSubmit={this.OnClickSubmit}>
                         <div className="col-12">
                             <label for="Name" className="form-label labelName">Name</label>
-                            <input type="text" className="form-control text-white" id="Name" value={this.state.nameInput} onChange={this.onChangeNameHandler} />
+                            <input type="text" className="form-control text-white" id="Name" value={this.state.nameInput} onChange={this.onChangeNameHandler} name="user_name" />
                             <Animated animationIn="shake" isVisible={this.state.nameAnime}>
                                 <span className="Error text-danger">{this.state.nameError}</span>
                             </Animated>
@@ -212,14 +230,14 @@ class BookTable extends Component {
                       
                         <div className="col-md-6 col-12">
                             <label for="Email" className="form-label labelName">E mail</label>
-                            <input type="text" className="form-control text-white" id="Email" value={this.state.mailInput} onChange={this.onChangeMailHandler}/>
+                            <input type="text" className="form-control text-white" id="Email" value={this.state.mailInput} onChange={this.onChangeMailHandler} name="send_to"/>
                             <Animated animationIn="shake" isVisible={this.state.mailAnime}>
                                 <span className="Error text-danger">{this.state.mailError}</span>
                             </Animated>
                         </div>
                         <div className="col-md-6 col-12">
                             <label for="Contact" className="form-label labelName">Contact</label>
-                            <input type="text" className="form-control text-white" id="Contact" value={this.state.contactInput} onChange={this.onChangeContactHandler}/>
+                            <input type="text" className="form-control text-white" id="Contact" value={this.state.contactInput} onChange={this.onChangeContactHandler} name="user_contact"/>
                             <Animated animationIn="shake" isVisible={this.state.contactAnime}>
                                 <span className="Error text-danger">{this.state.contactError}</span>
                             </Animated>
@@ -246,21 +264,21 @@ class BookTable extends Component {
                    
                         <div className="col-md-6 col-12">
                             <label for="inputDate" className="form-label labelName">Date</label>
-                            <input type="date" className="form-control text-white" id="inputDate" value={this.state.dateInput} onChange={this.onChangeDateHandler} />
+                            <input type="date" className="form-control text-white" id="inputDate" value={this.state.dateInput} onChange={this.onChangeDateHandler} name="user_slot" />
                             <Animated animationIn="shake" isVisible={this.state.dateAnime}>
                                 <span className="Error text-danger">{this.state.dateError}</span>
                             </Animated>
                         </div>
                         <div className="col-md-6 col-12">
                             <label for="inputPerson" className="form-label labelName">Person</label>
-                            <input type="number" className="form-control text-white" id="inputPerson" value={this.state.personInput} onChange={this.onChangePersonHandler} />
+                            <input type="number" className="form-control text-white" id="inputPerson" value={this.state.personInput} onChange={this.onChangePersonHandler} name="seat_count" />
                             <Animated animationIn="shake" isVisible={this.state.peopleAnime}>
                                 <span className="Error text-danger">{this.state.peopleError}</span>
                             </Animated>
                         </div>
 
                         <div className="BookButton">
-                            <button onClick={this.OnClickSubmit} className="btn customBookButton px-4">Book Now!</button>
+                            <button type="submit" className="btn customBookButton px-4">Book Now!</button>
                         </div>
                     </form>
                         
