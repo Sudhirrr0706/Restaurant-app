@@ -62,8 +62,12 @@
       box-shadow: none;
   }
 
-  .landingSection{
+  .landingSection,  .mailSent{
       text-align: center;
       font-family: 'Nunito', sans-serif;
+  }
+  .mailSent{
+    font-style: italic;
+    color: rgb(155, 148, 148);
   }
  

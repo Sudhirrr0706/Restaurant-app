@@ -329,12 +329,12 @@ class App extends Component {
                 <h3 className="menuDescription">Some Photos from our Restaurant</h3>
             </AnimationOnScroll>
 
-            <AnimationOnScroll  animateIn="animate__zoomIn" animationInDuration={2} animateOnce={true}  className="imageSection d-flex flex-wrap p-2">
+            <AnimationOnScroll  animateIn="animate__zoomIn" animateOnce={true}  className="imageSection d-flex flex-wrap p-2">
               {
                 images.map(item=>{
                   return(
                     
-                    <div className="d-flex col-lg-3 col-md-4 col-12 imageContainer p-3">
+                    <div className="d-flex col-lg-3 col-md-4 col-12 imageContainer p-3" key={item.id}>
                       <img  src={item.imgSrc} alt=""  key={item.id}/>
                    </div> 
                   )

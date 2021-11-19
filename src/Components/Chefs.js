@@ -8,7 +8,7 @@ class Chefs extends Component {
 
         return (
             <React.Fragment> 
-                <AnimationOnScroll animateIn="animate__fadeInUp" className="col-lg-4 col-md-6 col-12 p-2 chefsSection">
+                <AnimationOnScroll animateIn="animate__fadeIn" duration={2} className="col-lg-4 col-md-6 col-12 p-2 chefsSection">
                     <div className={this.props.classNameChef}>
                         <div>
                             <h2 className="chefName">{this.props.name}</h2>
