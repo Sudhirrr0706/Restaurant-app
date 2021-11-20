@@ -189,10 +189,6 @@ class BookTable extends Component {
         
 
     }
-
-  
-
-    // Send Email to confirm
   
    
 
@@ -291,9 +287,11 @@ class BookTable extends Component {
                             </Animated>
                         </div>
 
-                        <div className="BookButton">
+                          <div className="BookButton">
                             <button  type="submit" className="btn customBookButton px-4">Book Now!</button>
-                        </div>
+                            
+                        </div>  
+                        
                     </form>
                         
                    </div>

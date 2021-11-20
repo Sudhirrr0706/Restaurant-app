@@ -208,6 +208,7 @@ class App extends Component {
         {/* Header Section */}
         <header  id="introduction">
           <Navbar/>
+          
         </header>
 
       {/* Scroll To top */}

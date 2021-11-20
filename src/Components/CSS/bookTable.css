@@ -17,9 +17,11 @@
     transition: all 0.5s;
     font-weight: 500;
     font-family: 'Nunito', sans-serif;
+    transition: 0.5s ease-in-out;
 }
 .customBookButton:hover{
     color: #111;
+    transform: scale(1.1);
 }
 .customBookButton:focus, .closeButton:focus , .confirmButton:focus{
     box-shadow: none;
@@ -71,3 +73,4 @@
     color: rgb(155, 148, 148);
   }
  
+  

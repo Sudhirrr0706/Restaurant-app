@@ -20,7 +20,7 @@ class Navbar extends React.Component {
         render() {
         return (
           <React.Fragment>
-            <nav className="navbar navbar-expand-lg custom-nav fixed-top">
+            <nav id="navbar-example2" className="navbar navbar-expand-lg custom-nav fixed-top">
                 <div className="container">
                     <div className="d-flex flex-column mx-auto">
                         <div className="d-flex justify-content-center">
@@ -71,6 +71,7 @@ class Navbar extends React.Component {
                                 <a className="nav-link" href="#contactSection">Contact</a>
                             </li>
                         </ul>
+                        
                         <a className="btn btn-outline-secondary px-3 navBar-button" href="#ReservationSection">Book A Table</a>
                     </div>
                 </div>
